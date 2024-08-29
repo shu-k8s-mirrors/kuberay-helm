@@ -6,7 +6,7 @@ replicaCount: 1
 
 name: "kuberay-apiserver"
 image:
-  repository: quay.io/kuberay/apiserver
+  repository: localhost:5000/kuberay/apiserver
   tag: v1.2.0-rc.1
   pullPolicy: IfNotPresent
 
@@ -78,7 +78,7 @@ singleNamespaceInstall: false
 # security definition. Comment it out if security is not required
 security:
   proxy:
-    repository: quay.io/kuberay/security-proxy
+    repository: localhost:5000/kuberay/security-proxy
     tag: nightly
     pullPolicy: IfNotPresent
   env:

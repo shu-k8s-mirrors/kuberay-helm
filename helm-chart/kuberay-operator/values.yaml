@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 image:
-  repository: quay.io/kuberay/operator
+  repository: localhost:5000/kuberay/operator
   tag: v1.2.0-rc.1
   pullPolicy: IfNotPresent
 
